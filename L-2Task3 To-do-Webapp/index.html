@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-wrapper">
+        <div class="container">
+            <div class="head-container">
+                <div class="details">
+                    <h1>To Do App<br>By Sanchi Deshmukh</h1>
+                    <p>Keep Going</p>
+                    <div id="progressBar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div class="head-numbers">
+                    <p id="numbers">0 / 0</p>
+                </div>
+            </div>
+
+            <form action="">
+                <input type="text" id="taskInput" placeholder="Enter Your Task!!">
+                <button id="newTask" type="submit">
+                    <i class="ri-add-line"></i>
+                </button>
+            </form>
+
+            <ul class="task-list" id="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
