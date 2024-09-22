@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Scientific Calculator<br>By Sanchi Deshmukh</h1>
+    <div class="container">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0" readonly>
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <button class="button" onclick="clearScreen()">CE</button>
+                <button class="button" onclick="deleteLast()">DEL</button>
+                <button class="button" onclick="appendToScreen('(')">(</button>
+                <button class="button" onclick="appendToScreen(')')">)</button>
+                <button class="button" onclick="appendToScreen('%')">%</button>
+                <button class="button" onclick="clearScreen()">AC</button>
+            </div>
+            <div class="row">
+                <button class="button" onclick="appendToScreen('sin(')">sin</button>
+                <button class="button" onclick="appendToScreen('pi')">π</button>
+                <button class="button" onclick="appendToScreen('7')">7</button>
+                <button class="button" onclick="appendToScreen('8')">8</button>
+                <button class="button" onclick="appendToScreen('9')">9</button>
+                <button class="button" onclick="appendToScreen('/')">/</button>
+            </div>
+            <div class="row">
+                <button class="button" onclick="appendToScreen('cos(')">cos</button>
+                <button class="button" onclick="appendToScreen('log(')">log</button>
+                <button class="button" onclick="appendToScreen('4')">4</button>
+                <button class="button" onclick="appendToScreen('5')">5</button>
+                <button class="button" onclick="appendToScreen('6')">6</button>
+                <button class="button" onclick="appendToScreen('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="button" onclick="appendToScreen('tan(')">tan</button>
+                <button class="button" onclick="appendToScreen('sqrt(')">√</button>
+                <button class="button" onclick="appendToScreen('1')">1</button>
+                <button class="button" onclick="appendToScreen('2')">2</button>
+                <button class="button" onclick="appendToScreen('3')">3</button>
+                <button class="button" onclick="appendToScreen('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="button" onclick="appendToScreen('e')">e</button>
+                <button class="button" onclick="appendToScreen('^')">x^y</button>
+                <button class="button" onclick="appendToScreen('0')">0</button>
+                <button class="button" onclick="appendToScreen('.')">.</button>
+                <button class="button" onclick="appendToScreen('+')">+</button>
+                <button class="button" onclick="calculate()">=</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
